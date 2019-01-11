@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div align="center">
-		<form action="server.php" method="post">
+		<form  method="post">
 		    Your first name<br>
 		    <input type="text" name="fname"><br>
 		    Your last name<br>
