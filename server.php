@@ -1,26 +1,4 @@
-<?php
-// ini_set('error_reporting', E_ALL);
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-function my_ssh_disconnect($reason, $message, $language) {
-  printf("Сервер отключился с кодом причины [%d] и сообщением: %s\n",
-         $reason, $message);
-}
-
-$methods = array(
-  'kex' => 'diffie-hellman-group1-sha1',
-  'client_to_server' => array(
-    'crypt' => '3des-cbc',
-    'comp' => 'none'),
-  'server_to_client' => array(
-    'crypt' => 'aes256-cbc,aes192-cbc,aes128-cbc',
-    'comp' => 'none'));
-
-$callbacks = array('disconnect' => 'my_ssh_disconnect');
-
-$connection = ssh2_connect('localhost', 22, $methods, $callbacks);
-if (!$connection) die('Не удалось установить соединение');
-    
+<?php    
 if(!isset($_POST['send'])) {
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
