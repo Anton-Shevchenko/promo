@@ -29,6 +29,7 @@
 		<h2>ActiveComaign</h2>
 		<p><strong>login:</strong> fipehaho@mailapps.online</p>
 		<p><strong>pass:</strong> password</p>
+		<p><strong>name:</strong> mailapps</p>
 	</div>
 </body>
 </html>
